@@ -13,17 +13,17 @@ of the callback function in the window opener
 Example
 -------
 
-  var MY_REDIRECTOR_URL=<here is where you deploy postmessageitor>;
-  var windowHandler;
+    var MY_REDIRECTOR_URL=<here is where you deploy postmessageitor>;
+    var windowHandler;
   
-  // Registir a callback to listen to the messages from postmessageitor
-  window.addEventListener('message', function(evt) {
-    console.log(JSON.stringify(evt.data));
-    windowHandler.close();
-  });
+    // Registir a callback to listen to the messages from postmessageitor
+    window.addEventListener('message', function(evt) {
+      console.log(JSON.stringify(evt.data));
+      windowHandler.close();
+    });
 
-  // Open the window
-  windowHandler = window.open('http://<my site that needs Oauth 1.0>?callbackurl=' + MY_REDIRECTOR_URL);
+    // Open the window
+    windowHandler = window.open('http://<my site that needs Oauth 1.0>?callbackurl=' + MY_REDIRECTOR_URL);
 
 
 
