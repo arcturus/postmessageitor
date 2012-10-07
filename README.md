@@ -31,3 +31,15 @@ Modify and deploy
 -----------------
 
 Modify the file _postmessage.html_ to present any kind of UI to the user meanwhile you decide what to do with the window.
+
+
+Deploying your copy to www.cloudfoundry.com
+-------------------------------------------
+
+Let's deploy our instance (or use an existing one :P) of postmessageitor. We will use _Cloud Foundry_ by VmWare, that allows us
+to deploy Node.js applications for free, here is the how to:
+
+    $ vmc login
+    $ vmc push [appname]
+
+After configuring memory and more steps you will have deployed your instance of postmessageitor in: [appname].cloudfoundry.com
