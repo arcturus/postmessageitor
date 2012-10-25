@@ -2,6 +2,6 @@
  "name":"node_redirector",
  "version":"0.0.1",
  "dependencies":{
-   "express":"3.0.0rc5"
+   "express":"3.0.0"
  }
 }
