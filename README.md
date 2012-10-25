@@ -33,6 +33,11 @@ Modify and deploy
 Modify the file _postmessage.html_ to present any kind of UI to the user meanwhile you decide what to do with the window.
 
 
+Static support
+--------------
+Drop your static files to the 'static' folder and they will be serve as static content, easy :)
+
+
 Deploying your copy to www.cloudfoundry.com
 -------------------------------------------
 
@@ -40,6 +45,6 @@ Let's deploy our instance (or use an existing one :P) of postmessageitor. We wil
 to deploy Node.js applications for free, here is the how to:
 
     $ vmc login
-    $ vmc push [appname]
+    $ vmc push [appname] --runtime node08
 
 After configuring memory and more steps you will have deployed your instance of postmessageitor in: [appname].cloudfoundry.com
